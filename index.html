@@ -26,19 +26,38 @@
       </div>
       <div class="col-md-12">.
         <div class="buttons">
-          <button id="play-button" type="button" class="btn btn-outline-success">Start</button>
-        <button id="reset-button" type="button" class="btn btn-outline-warning">Shuffle</button>
+          <button id="btnstart" type="button"  onclick="Start()" class="btn btn-outline-success">Start</button>
         </div>
       </div>
 
     </div>
     <div class="row">
       <div class="col-md-12">
-        <div class="dealer-cards" id="dealer-card-output"></div>
+        <div id="output">
+          Dealer Hand : <span id="dValue"></span>
+          <div id="dealerHolder"></div>
+          Player Hand : <span id="pValue"></span>
+          <div id="playerHolder"></div>
+          <div id="myactions">
+            <button id="btnhold" type="button" onclick="cardAction('hold')" class="btn btn-danger">Hold</button>
+            <button id="btnhit" type="button" onclick="cardAction('hit')" class="btn btn-success">Hit</button>
+          </div>
+          <div>
+            <button id="btndeal" type="button" onclick="dealNew()" class="btn btn-outline-success">Deal</button>
+          </div>
+        </div>
       </div>
       <div class="col-md-12">
-        <div class="player-cards" id="player-card-output"></div>
+        <div class="total">Total $<span id="dollars">100</span><br>Bet  $<input type="number" id="mybet" value="5" min="1" max="100"><button id="maxbet" type="button" onclick="maxbet()" class="btn">Max Bet</button></div>
       </div>
+    </div>
+  </div>
+
+  <div>
+    <div>
+  
+      
+      
     </div>
   </div>
   
